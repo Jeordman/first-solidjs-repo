@@ -9,6 +9,7 @@ function Counter({}) {
 
   return (
     <>
+      <h2>COUNTER</h2>
       <div>{counter()}</div>
       <button onClick={() => setCounter(counter() + 1)}>Increment</button>
       <button onClick={() => setCounter(counter() - 1)}>Decrement</button>
@@ -47,6 +48,7 @@ function TodoApp({}) {
 
   return (
     <>
+      <h2>ToDo</h2>
       <ul>
         <For each={todos()}>
           {(todo, _) => (
